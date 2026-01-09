@@ -1,7 +1,6 @@
 # Radio-Frequency-Signal-and-Interference-Detector
-This is the code (Jupyter Notebook) for detection of different RF(radio frequency) signals like Wi-Fi, Blue-tooth, Zigbee using Computer Vision Techniques and MobileNet Architecture.  
 
-In this Jupyter Notebook , I have generated synthetic Radio Frequency(RF) signals like Wi-Fi, BlueTooth , Zigbee and designed a Mo
+This module implements the Non-Wi-Fi Classifier mandated in the Mid-Term Sensing objective. Leveraging a MobileNetV3-Small architecture, it provides lightweight, edge-compatible inference to classify spectrum signatures of Wi-Fi, Bluetooth, and ZigBee. The model's output serves as the state context for the Bayesian Optimization engine , enabling the RRM controller to distinguish between co-channel contention (solvable via OBSS-PD ) and non-Wi-Fi interference (requiring channel evasion). Trained on physics-compliant synthetic data and validated on real-world RF captures, the model achieved ~90% accuracy, directly supporting the project's goal of safer, interference-aware spectrum management.
 
 ---
 
